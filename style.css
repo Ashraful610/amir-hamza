@@ -9,20 +9,40 @@ section{
     display: flex;
     justify-content: center;
 }
-.img{
-    width: 300px;
-    height: 400px;
+.big-img{
+    width: 280px;
+    height: 350px;
 }
 .text-div{
     width: 50%;
     padding-right: 100px;
 }
-.btn{
+.text-title{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(4, 109, 151);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.buy-button{
     background-color:  rgb(12 74 110);
     color: white;
     padding: 10px 35px;
     border-radius:30px;
     margin-top: 20px;
+}
+@media only screen and (min-width:641px) and (max-width:1006px){
+    
+    .big-img{
+        width: 220px;
+        height: 320px;
+    }
+    .text-div{
+        padding-right: 50px;
+    }
+    .text-title{
+        font-size: 28px;
+    }
+    
 }
 @media only screen and (max-width:415px){
     section{
@@ -32,16 +52,17 @@ section{
         width: 100%;
         padding: 20px;
     }
+    .big-img{
+        width: 220px;
+        height: 320px;
+    }
     .text-div{
-        width: 100%;
         padding-right: 0px;
         padding: 20px;
+        width: 100%;
     }
-    .btn{
-        background-color:  rgb(12 74 110);
-        color: white;
-        padding: 10px 35px;
-        border-radius:30px;
-        margin-top: 20px;
+    .text-title{
+        font-size: 28px;
     }
+  
 }
